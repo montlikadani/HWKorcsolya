@@ -1,0 +1,24 @@
+﻿<Window x:Class="Mukorcsolya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Műkorcsolya" Height="293" Width="609" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" FontSize="14">
+    <Grid>
+        <Label Content="2. feladat:" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="OsszesVersenyzo" HorizontalAlignment="Left" Height="24" Margin="9,44,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="Auto" IsReadOnly="True"/>
+
+        <Label Content="3. feladat:" HorizontalAlignment="Left" Margin="9,73,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MagyarDontos" HorizontalAlignment="Left" Height="24" Margin="9,107,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="Auto" IsReadOnly="True"/>
+
+        <Label Content="5. feladat: Adjon meg egy versenyző nevet:" HorizontalAlignment="Left" Margin="9,139,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NevInput" HorizontalAlignment="Left" Height="24" Margin="12,173,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="150" TextChanged="NevInput_TextChanged"/>
+
+        <Label Name="sixthTask" Content="6. feladat:" Visibility="Collapsed" HorizontalAlignment="Left" Margin="171,169,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DontRes" Visibility="Collapsed" HorizontalAlignment="Left" Height="24" Margin="243,174,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="Auto" IsReadOnly="True"/>
+
+        <Label Content="7. feladat:" HorizontalAlignment="Left" Margin="327,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="Osszesitesek" HorizontalAlignment="Left" Height="100" Margin="327,44,0,0" VerticalAlignment="Top" Width="219"/>
+    </Grid>
+</Window>
